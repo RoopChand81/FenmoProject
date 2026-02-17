@@ -25,10 +25,6 @@ export default function ExpenseList({ refreshKey }) {
 
       if (response.success) {
         setExpenses(response.data);
-
-        // Optional: show toast only on manual refresh
-        // setToast({ message: response.message, type: "success" });
-
       } else {
         setToast({
           message: response.message,
