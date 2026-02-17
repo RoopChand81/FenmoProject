@@ -42,21 +42,34 @@ expense-tracker/
 ├── backend/
 │   ├── src/
 │   │   ├── config/
+│   │   │   └── db.js
 │   │   ├── controllers/
+│   │   │   └── expense.controller.js
 │   │   ├── models/
+│   │   │   └── expense.model.js
 │   │   ├── routes/
+│   │   │   └── expense.route.js
 │   │   ├── app.js
 │   │   └── server.js
-│   └── .env
+│   ├── .env
+│   └── package.json
 │
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── ExpenseForm.jsx
+│   │   │   ├── ExpenseList.jsx
+│   │   │   └── Toast.jsx
 │   │   ├── services/
+│   │   │   └── api.js
 │   │   ├── App.jsx
 │   │   └── main.jsx
+│   ├── package.json
+│   └── tailwind.config.js
 │
 └── README.md
+
 
 ------------------------------------------------------------------------
 
