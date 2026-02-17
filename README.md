@@ -38,17 +38,38 @@ conditions such as retries, slow networks, and page refreshes.
 
 ## 🏗 Project Structure
 
-expense-tracker/ ├── backend/ │ ├── src/ │ │ ├── config/ │ │ ├──
-controllers/ │ │ ├── models/ │ │ ├── routes/ │ │ ├── app.js │ │ └──
-server.js │ └── .env │ ├── frontend/ │ ├── src/ │ │ ├── components/ │ │
-├── services/ │ │ ├── App.jsx │ │ └── main.jsx │ └── README.md
+expense-tracker/
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── app.js
+│   │   └── server.js
+│   └── .env
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│
+└── README.md
 
 ------------------------------------------------------------------------
 
 ## 🗄 Data Model
 
-Each expense contains: - id - amount (stored as integer in paise) -
-category - description - date - created_at - idempotencyKey
+Each expense contains:
+- id
+- amount (stored as integer in paise)
+- category
+- description
+- date
+- created_at
+- idempotencyKey
 
 Money is stored as integer to avoid floating-point precision errors.
 
